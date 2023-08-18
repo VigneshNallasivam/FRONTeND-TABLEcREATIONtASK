@@ -8,7 +8,7 @@ function tableCreation() {
             "nationality": "indian",
             "address": "Erode"
         },
-    
+
         {
             "id": 2,
             "name": "Bino",
@@ -18,8 +18,8 @@ function tableCreation() {
             "address": "Thirunelveli"
         }
     ]
-    
-    
+
+
     let table = document.createElement("table");
     let thead = document.createElement("thead");
     let tbody = document.createElement("tbody");
@@ -32,7 +32,7 @@ function tableCreation() {
         let headerCell = document.createElement("th");
         headerCell.textContent = headers[i];
         headerRow.appendChild(headerCell);
-        }
+    }
 
     thead.appendChild(headerRow);
     table.appendChild(thead);
@@ -49,6 +49,17 @@ function tableCreation() {
     }
     table.appendChild(tbody);
     var container = document.getElementById("table-container");
-    container.appendChild(table);   
+    container.appendChild(table);
+    buttonEnableOrDisable(true);
 }
 
+function buttonEnableOrDisable(value) {
+    let button = document.querySelector("button");
+    button.disabled = value;
+    button.innerHTML = "Processing...";
+    button.style.backgroundColor = "#ff900061";
+
+    setTimeout(function () {
+        location.reload();
+    }, 3000);
+}

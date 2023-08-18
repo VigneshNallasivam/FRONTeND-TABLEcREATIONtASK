@@ -1,13 +1,22 @@
 table,
 th,
 td {
-    border: solid 1px #ddd;
-    border-collapse: collapse;
-    padding: 2px 3px;
+    padding: 20px;
     text-align: center;
+
 }
 
 th {
     font-weight: bold;
+    text-transform: uppercase;
+    background-color: bisque;
 }
 
+td {
+    background-color: rgb(255, 249, 239)
+}
+
+table {
+    margin-left:auto;
+    margin-right:auto;
+}
