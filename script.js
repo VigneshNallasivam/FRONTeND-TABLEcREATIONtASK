@@ -1,4 +1,3 @@
-
 function tableCreation() {
     dataArray = [
         {
@@ -50,6 +49,6 @@ function tableCreation() {
     }
     table.appendChild(tbody);
     var container = document.getElementById("table-container");
-    container.appendChild(table);
+    container.appendChild(table);   
 }
 
